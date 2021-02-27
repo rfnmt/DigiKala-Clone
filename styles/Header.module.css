@@ -1,0 +1,340 @@
+.headerSection {
+  min-width: 1100px;
+  max-width: 2000px;
+  position: relative;
+}
+
+/* Main Section of the Header  */
+
+.mainHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  background-color: #fff;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+.logoAndSerach {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 110px;
+  height: auto;
+  margin-left: 24px;
+  margin-right: 8px;
+}
+
+.searchSection {
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f1;
+  padding: 14px 45px 14px 10px;
+}
+
+.searchInput:focus {
+  outline: none;
+}
+
+.serachIcon {
+  color: #a1a3a8;
+  font-size: 18pt;
+  margin-left: -35px;
+  z-index: 99;
+}
+
+/* LogIn and Cart Buttons */
+.actionButtons {
+  display: flex;
+  justify-content: space-around;
+  flex-basis: 300px;
+  align-items: center;
+}
+
+.LoginButton {
+  border: 1px solid #e0e0e2;
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  font-size: 0.857rem;
+  line-height: 1.833;
+  cursor: pointer;
+  color: #616161;
+}
+
+.userIcon {
+  color: #a1a3a8;
+  font-size: 18pt;
+  margin-left: 7px;
+}
+
+.devider {
+  width: 1px;
+  height: 30px;
+  background-color: #e0e0e2;
+}
+
+.cartIcon {
+  color: #a1a3a8;
+  font-size: 18pt;
+  cursor: pointer;
+}
+
+/* NavBar */
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  padding: 0 15px;
+  box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
+  transition: all 0.2s;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navList li {
+  padding: 7px 12px 0;
+  font-weight: 700;
+  font-size: 10pt;
+  color: #616161;
+  cursor: pointer;
+}
+
+.catHolder {
+  margin-left: 15px;
+}
+
+.navList li svg,
+.citySelect svg {
+  margin-left: 8px;
+  font-size: 12pt;
+  color: #a1a3a8;
+}
+
+.navList li img {
+  margin-left: 6px;
+  margin-bottom: -4px;
+}
+
+.navList .navItem::after {
+  content: "";
+  display: block;
+  margin: auto;
+  height: 2px;
+  width: 0px;
+  background: tomato;
+  transition: all 0.2s linear;
+  margin-top: 10px;
+}
+
+.navList .navItem:hover::after {
+  width: 100%;
+}
+
+.citySelect {
+  display: flex;
+  justify-content: space-around;
+  font-size: 10pt;
+  font-weight: 700;
+  color: #616161;
+  padding: 6px 12px 0;
+  cursor: pointer;
+}
+
+.citySelect svg {
+  margin-right: 10px;
+}
+
+/* Category DropDown */
+.catDropDown {
+  display: none;
+  position: absolute;
+  margin-top: 12px;
+  background-color: #fff;
+  width: 95%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 0 0 10px 10px;
+}
+
+.catListItem {
+  border-left: 1px solid #f0f0f1;
+  padding: 16px 20px;
+  width: 200px;
+}
+
+.catListItem:hover {
+  color: #ef394e;
+  background: #f5f5f5;
+  border-radius: 0 5px 5px 0;
+  padding: 15px 20px;
+  border-top: 1px solid #f0f0f1;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+.catListItemActive {
+  border-left: 1px solid #f0f0f1;
+  padding: 15px 20px;
+  width: 200px;
+  color: #ef394e;
+  background: #f5f5f5;
+  border-radius: 0 5px 5px 0;
+  padding: 15px 20px;
+  border-top: 1px solid #f0f0f1;
+  border-bottom: 1px solid #f0f0f1;
+}
+
+.catListItemActive .subCat {
+  color: #616161;
+}
+
+.navList li:hover .catDropDown {
+  display: block;
+}
+
+.subCat {
+  position: absolute;
+  top: 0;
+  right: 200px;
+  display: none;
+  padding-right: 20px;
+  width: 80%;
+  padding: 20px;
+}
+
+.catListItem:hover .subCat,
+.subCat:hover {
+  display: block;
+  color: #616161;
+}
+
+/* Drop Down */
+
+.dropDownContent {
+  display: none;
+  position: absolute;
+  margin-top: 12px;
+  margin-right: -10%;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  transition: all 2s;
+  border-radius: 0 0 10px 10px;
+}
+
+.navList li:hover .dropDownContent {
+  display: block;
+}
+
+.dropDownContent ul li {
+  list-style: none;
+}
+
+/* Digi Plus */
+.digiPlus {
+  display: flex;
+  max-width: 650px;
+  cursor: auto;
+  padding: 10px;
+}
+
+.DigiPlusBanner {
+  max-width: 350px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.DigiPlusLogo {
+  max-width: 60px;
+  height: auto;
+  margin: 0 10px;
+}
+
+.digiPlus hr {
+  width: 90%;
+  margin: auto;
+  color: #a1a3a8;
+  margin: 10px 0;
+}
+
+.digiPlus p {
+  margin: 10px 0;
+}
+
+/* Digi Club */
+
+.DigiClubLogo {
+  max-width: 90px;
+  height: auto;
+}
+
+.digiClubCounter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timer {
+  direction: ltr;
+}
+
+/* NavBar SubCate */
+.catTitle {
+  font-size: 10pt !important;
+  color: #616161 !important;
+  font-weight: 600 !important;
+  line-height: 32px !important;
+}
+
+.catTitle span {
+  display: inline-block;
+  padding-right: 6px;
+}
+
+.subCatCols {
+  display: flex;
+  /* align-items: center; */
+  margin-top: 10px;
+}
+
+.subCatCol {
+  width: 25%;
+}
+
+.subCatCol p {
+  color: #7a8a99;
+  line-height: 28px;
+  font-size: 10pt;
+  font-weight: 300;
+}
+
+.subCatCol p:hover {
+  color: #ef394e !important;
+}

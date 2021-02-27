@@ -1,9 +1,21 @@
-html,
-body {
+@font-face {
+  font-family: Vazir;
+  src: url("../src/Data/Font/Vazir.eot");
+  src: url("../src/Data/Font/Vazir.woff") format("woff"),
+    url("../src/Data/Font/Vazir.ttf") format("truetype");
+  font-weight: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Vazir !important;
+  direction: rtl;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 a {
@@ -11,6 +23,6 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+.blueLink {
+  color: #0fabc6;
 }
