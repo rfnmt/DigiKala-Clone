@@ -1,0 +1,52 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "name": "ماوس مخصوص بازی لاجیتک مدل G300s",
+      "price": 800000,
+      "discount": 29,
+      "time": 11,
+      "src": "/Products/p5.jpg"
+    },
+    {
+      "id": 2,
+      "name": "ماسک مو با آبکشی ویتامینه فابریگاس مدل Argan حجم 250 میلی لیتر",
+      "price": 74000,
+      "discount": 37,
+      "time": 13,
+      "src": "/Products/p3.jpg"
+    },
+    {
+      "id": 3,
+      "name": "گردنبند طلا 18 عیار زنانه ریسه گالری مدل D-1004G",
+      "price": 499000,
+      "discount": 36,
+      "time": 16,
+      "src": "/Products/p4.jpg"
+    },
+    {
+      "id": 4,
+      "name": "کوله پشتی کوه نوردی 55 لیتری فوروارد FCLT313",
+      "price": 659000,
+      "discount": 61,
+      "time": 21,
+      "src": "/Products/p6.jpg"
+    },
+    {
+      "id": 5,
+      "name": "کفش پیاده روی مردانه پاما مدل SPN-1 کد G1265",
+      "price": 210000,
+      "discount": 28,
+      "time": 7,
+      "src": "/Products/p1.jpg"
+    },
+    {
+      "id": 6,
+      "name": "ساعت مچی عقربه ای مردانه فراری مدل 830481 ",
+      "price": 1950000,
+      "discount": 2,
+      "src": "/Products/p2.jpg",
+      "time": 3
+    }
+  ]
+}

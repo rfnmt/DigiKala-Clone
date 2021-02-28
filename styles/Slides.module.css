@@ -1,0 +1,145 @@
+/* First Section Slider */
+
+.fisrtSectionSlider {
+  position: relative;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 2s ease;
+  transition-delay: 1s;
+}
+
+.slideActive {
+  opacity: 1;
+  transition: all 2s ease;
+}
+
+.sliderImage {
+  max-width: 100%;
+  height: auto;
+  border-radius: 25px;
+}
+
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Special Offer Slider */
+
+.offersItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  margin: 15px;
+  font-size: 4em;
+  border-radius: 8px;
+}
+
+.offerImageContainer {
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+}
+
+.offerImageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.offersItem p {
+  font-size: 10pt;
+}
+
+.offerTitle {
+  color: #535353;
+  font-size: 11pt;
+  max-width: 90%;
+  margin: auto;
+}
+
+.offerPriceSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 90%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.offerPriceSection del {
+  color: #acacac;
+  font-size: 11pt;
+}
+
+.discount {
+  font-size: 11pt;
+  color: #fff;
+  background-color: #fb3449;
+  min-width: 43px;
+  height: 23px;
+  margin: 0 10px;
+  padding: 4px 6px 1px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 3px;
+  line-height: 1.375;
+}
+
+.finalPrice {
+  width: 100%;
+  color: #000;
+  font-weight: 700;
+  font-size: 16pt;
+  /* font-size: 1.429rem; */
+  line-height: 1.1;
+  margin-top: 7px;
+}
+
+.finalPrice span {
+  font-weight: 400;
+  font-size: 11pt;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 90%;
+  text-align: left;
+  margin: 10px 0;
+  color: #737373;
+}
+
+.timer p {
+  direction: ltr;
+  margin: 0 6px;
+}
+
+.timer svg {
+  font-size: 13pt;
+}

@@ -20,9 +20,15 @@ const DigiClubDropDown = () => {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
+    let active = true;
+
     axios.get("http://localhost:3000/api/counter").then((res) => {
-      setRemainTime(res.data.remaining);
+      active ? setRemainTime(res.data.remaining) : null;
     });
+
+    return () => {
+      active = false;
+    };
   }, []);
 
   useEffect(() => {
@@ -33,18 +39,14 @@ const DigiClubDropDown = () => {
     time !== 0 &&
       setInterval(() => {
         let now = new Date().getTime();
-        // let countDownDate = now + daysMiliSeconds;
         let distance = time - now;
 
-        // let days = Math.floor(distance / (1000 * 60 * 60 * 24));
         setDays(Math.floor(distance / (1000 * 60 * 60 * 24)));
         setHours(
           Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
         );
-        // let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
-        // let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        setSeconds((Math.floor((distance % (1000 * 60)) / 1000)));
+        setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
       }, 1000);
   };
 
@@ -90,11 +92,11 @@ const DigiClubDropDown = () => {
                 قرعه کشی
               </a>
             </Link>
-            <p className={Style.timer}>{`${toFarsiNumber(days)} : ${toFarsiNumber(
-              hours
-            )} : ${toFarsiNumber(minutes)} : ${toFarsiNumber(
-              seconds
-            )}`}</p>
+            <p className={Style.timer}>{`${toFarsiNumber(
+              days
+            )} : ${toFarsiNumber(hours)} : ${toFarsiNumber(
+              minutes
+            )} : ${toFarsiNumber(seconds)}`}</p>
           </div>
         </div>
         <div>

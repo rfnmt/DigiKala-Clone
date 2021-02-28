@@ -1,0 +1,44 @@
+.container {
+  background: #ef394e;
+}
+
+.main {
+  display: flex;
+  max-width: 1366px;
+  margin: auto;
+  padding: 35px 16px;
+}
+
+.firstCol {
+  margin: 0 44px;
+  max-width: 170px;
+}
+
+.firstCol img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-around;
+  padding: 9px 16px;
+  font-size: 14px;
+  font-size: 1rem;
+  line-height: 1.571;
+  font-weight: 700;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 10px;
+  margin: 10px auto;
+}
+
+.btnIcon {
+  /* display: inline-block; */
+  /* padding-right: 10px; */
+  font-size: 10pt;
+}
+
+.slideContainer {
+  width: calc(100% - 258px);
+}
