@@ -5,27 +5,65 @@ import Header from "../src/Components/Header";
 import FirstSection from "../src/Components/BannersSection/FisrtSection";
 import SpecialOffers from "../src/Components/SpecialOffers";
 import FourBanners from "../src/Components/BannersSection/FourBannersSection";
+import CommonSlider from "../src/Components/Sliders/CommonSlider";
+import SingleItemSlider from "../src/Components/Sliders/SingleItemSlider";
+import BackToTop from "../src/Components/backToTop";
+import Footer from "../src/Components/Footer";
 
 //Styles
-import styles from "../styles/Home.module.css";
+import Styles from "../styles/Home.module.css";
 
-export default function Home({ offers }) {
+export default function Home({ offers, superMarket, charger, single, mobile }) {
   return (
     <>
       <Header />
       <FirstSection />
-      <SpecialOffers offers={offers.data.offers} />
+      <SpecialOffers data={offers.data} />
       <FourBanners />
-      <div className={styles.container}></div>
+      <SpecialOffers data={superMarket.data} />
+      <div className={Styles.twoSlidersContainer}>
+        <div className={Styles.bigSlider}>
+          <CommonSlider data={charger.data} />
+        </div>
+        <div className={Styles.smallSlider}>
+          <SingleItemSlider data={single.data} />
+        </div>
+      </div>
+      <FourBanners />
+      <div className={Styles.commonSlidersContainer}>
+        <CommonSlider data={mobile.data} />
+      </div>
+      <div className={Styles.commonSlidersContainer}>
+        <CommonSlider data={charger.data} />
+      </div>
+      <BackToTop />
+      <Footer />
     </>
   );
 }
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/special-offers");
-  const offers = await res.json();
+  const offers = await fetch(
+    "http://localhost:3000/api/special-offers"
+  ).then((res) => res.json());
+
+  const superMarket = await fetch(
+    "http://localhost:3000/api/super-market-offers"
+  ).then((res) => res.json());
+
+  const charger = await fetch("http://localhost:3000/api/charger").then((res) =>
+    res.json()
+  );
+
+  const single = await fetch("http://localhost:3000/api/single").then((res) =>
+    res.json()
+  );
+
+  const mobile = await fetch("http://localhost:3000/api/mobile").then((res) =>
+    res.json()
+  );
 
   return {
-    props: { offers },
+    props: { offers, superMarket, charger, single, mobile },
   };
 }

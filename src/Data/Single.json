@@ -1,0 +1,22 @@
+{
+  "offers": [
+    {
+      "id": 1,
+      "name": "گوشی موبایل سامسونگ مدل Galaxy S21 Ultra 5G SM-G99...",
+      "price": 31700000,
+      "src": "/Products/p14.jpg"
+    },
+    {
+      "id": 2,
+      "name": "ساعت هوشمند اپل سری 3 جی پی اس مدل 38mm Aluminium Case with Sport Band",
+      "price": 5680000,
+      "src": "/Products/p15.jpg"
+    },
+    {
+      "id": 1,
+      "name": "تلویزیون ال ای دی شهاب مدل LED24SH201N1 سایز 24 اینچ",
+      "price": 2600000,
+      "src": "/Products/p16.jpg"
+    }
+  ]
+}

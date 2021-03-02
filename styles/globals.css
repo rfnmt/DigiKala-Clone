@@ -54,6 +54,7 @@ a {
   border-radius: 10px 0 0 10px !important;
   z-index: 98;
   right: 5px !important;
+  box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%) !important;
 }
 
 .rec-arrow-right {
@@ -63,6 +64,7 @@ a {
   height: 100px !important;
   z-index: 98;
   left: 5px !important;
+  box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%) !important;
 }
 
 .cukhLH {
@@ -77,3 +79,12 @@ a {
 .lgksPe:focus:enabled {
   color: #000 !important;
 }
+
+.Slides_commonContainer__1FO87 .rec-arrow-left {
+  right: 0 !important;
+}
+
+.Slides_commonContainer__1FO87 .rec-arrow-right {
+  left: 0 !important;
+}
+

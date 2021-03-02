@@ -143,3 +143,77 @@
 .timer svg {
   font-size: 13pt;
 }
+
+/* Common Slider */
+
+.commonContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 33px 11px;
+}
+
+.headerSpace {
+  width: 78%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #acacac;
+}
+
+.commonTitle {
+  width: 20%;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #fb3449;
+  font-weight: 700;
+  font-size: 14pt;
+}
+
+.commonItem {
+  margin: 20px 10px;
+  border-radius: 8px;
+  transition-duration: 0.1s;
+}
+
+.commonItem:hover {
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 10%);
+  transform: translateY(-2px);
+  cursor: pointer;
+}
+
+/* Single Item Slider */
+
+.singleContainer {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 5px;
+  border: 1px solid rgba(0, 191, 214, 0.3);
+  height: 100%;
+}
+
+.singleTitle {
+  color: #737373;
+  font-size: 11pt;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.progressBar {
+  height: 1px;
+  background: linear-gradient(270deg, #ffd3db, #fb3449);
+  animation: load 7s normal backwards;
+  margin: 20px 10px;
+}
+
+@keyframes load {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}

@@ -1,5 +1,9 @@
-.container {
+.containerRed {
   background: #ef394e;
+}
+
+.containerGreen {
+  background: #6bb927;
 }
 
 .main {

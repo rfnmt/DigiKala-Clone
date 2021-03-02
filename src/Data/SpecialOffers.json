@@ -1,4 +1,6 @@
 {
+  "color": "red",
+  "mainPic": "/Products/SpecialOffers.png",
   "offers": [
     {
       "id": 1,

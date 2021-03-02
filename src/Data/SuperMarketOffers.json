@@ -1,0 +1,54 @@
+{
+  "color": "green",
+  "mainPic": "/SuperMarket/superMarketPic.png",
+  "offers": [
+    {
+      "id": 1,
+      "name": "کروسان کاکائو پچ پچ  بسته 6 عددی",
+      "price": 27000,
+      "discount": 28,
+      "time": 11,
+      "src": "/SuperMarket/p1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "زیتون شور معمولی بیژن - 680 گرم",
+      "price": 29000,
+      "discount": 33,
+      "time": 7,
+      "src": "/SuperMarket/p2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "شیر کم چرب دومینو - 1 لیتر بسته 4 عددی",
+      "price": 56000,
+      "discount": 25,
+      "time": 17,
+      "src": "/SuperMarket/p3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "قهوه ترک بن مانو مقدار 250 گرم",
+      "price": 49000,
+      "discount": 28,
+      "time": 21,
+      "src": "/SuperMarket/p4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "مغز ران مهیا پروتئین - 1.8 کیلوگرم",
+      "price": 106000,
+      "discount": 15,
+      "time": 3,
+      "src": "/SuperMarket/p5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "مایع لباسشویی پرسیل مدل یونیورسال مقدار 2700 گرم - تخفیف دار ",
+      "price": 88000,
+      "discount": 22,
+      "time": 6,
+      "src": "/SuperMarket/p5.jpg"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "title": "شارژر مخصوص لپ‌تاپ",
+  "products": [
+    {
+      "id": 1,
+      "name": "کابل برق سه پین مدل OSCAR طول 1.8 متر",
+      "price": 20000,
+      "src": "/Products/p7.jpg"
+    },
+    {
+      "id": 2,
+      "name": "شارژر لپ تاپ 19 ولت 4.74 آمپر مدل ADP-90SB BB",
+      "price": 165000,
+      "src": "/Products/p8.jpg"
+    },
+    {
+      "id": 3,
+      "name": "شارژر لپ تاپ 19ولت 3.42 آمپر مدل ADP-65DW A",
+      "price": 289000,
+      "src": "/Products/p9.jpg"
+    },
+    {
+      "id": 4,
+      "name": "شارژر لپ تاپ 19 ولت 3.42 آمپر مدل ADP-65JH BB",
+      "price": 161000,
+      "src": "/Products/p10.jpg"
+    },
+    {
+      "id": 5,
+      "name": "شارژر لپ تاپ 19.5 ولت 4.62 آمپر مدلPa-1900-02d",
+      "price": 201000,
+      "src": "/Products/p11.jpg"
+    },
+    {
+      "id": 6,
+      "name": "شارژر لپ تاپ 19 ولت 4.74 آمپر مدل ADP-90SB-BB",
+      "price": 168000,
+      "src": "/Products/p12.jpg"
+    },
+    {
+      "id": 7,
+      "name": "شارژر لپ تاپ 19.5 ولت 4.7 آمپر مدل VGP-AC19V10 AA",
+      "price": 180000,
+      "src": "/Products/p13.jpg"
+    }
+  ]
+}

@@ -42,7 +42,7 @@ const Header = () => {
 
   return (
     <>
-      <div className={Style.headerSection} ref={ref}>
+      <div id='top' className={Style.headerSection} ref={ref}>
         {/* Main Section of Header */}
         <div className={`${Style.mainHeader} ${isSticky ? Style.sticky : ""}`}>
           <div className={Style.logoAndSerach}>

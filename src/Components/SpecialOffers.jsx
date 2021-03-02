@@ -14,15 +14,18 @@ import Slider from "./Sliders/SpecialOffersSlider";
 //Styles
 import Styles from "../../styles/SpecialOffers.module.css";
 
-const SpecialOffers = ({ offers }) => {
-  // console.log(offers);
+const SpecialOffers = ({ data }) => {
   return (
-    <section className={Styles.container}>
+    <section
+      className={
+        data.color === "red" ? Styles.containerRed : Styles.containerGreen
+      }
+    >
       <div className={Styles.main}>
         <div className={Styles.firstCol}>
           <Link href="#">
             <a>
-              <img src="/SpecialOffers.png" alt="" />
+              <img src={data.mainPic} alt="" />
             </a>
           </Link>
           <Link href="#">
@@ -40,7 +43,7 @@ const SpecialOffers = ({ offers }) => {
           </Link>
         </div>
         <div className={Styles.slideContainer}>
-          <Slider offers={offers} />
+          <Slider offers={data.offers} />
         </div>
       </div>
     </section>
