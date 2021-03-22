@@ -1,8 +1,10 @@
-.headerSection {
+.container {
   min-width: 1100px;
   max-width: 2000px;
   position: relative;
   background-color: #fff !important;
+  box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
+  z-index: 11;
 }
 
 /* Main Section of the Header  */
@@ -13,9 +15,12 @@
   padding: 15px;
   width: 100%;
   background-color: #fff !important;
+  z-index: 10;
+  box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
 }
 
 .sticky {
+  width: 100%;
   position: fixed;
   top: 0;
   z-index: 99;
@@ -108,10 +113,16 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  z-index: 9;
   padding: 10px 15px;
   box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
-  transition: all 0.2s;
   background-color: #fff !important;
+  transition: 0.3s;
+}
+
+.hidden {
+  margin-top: -10px;
+  opacity: 0;
 }
 
 .navList {

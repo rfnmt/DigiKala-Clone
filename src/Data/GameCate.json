@@ -1,0 +1,269 @@
+{
+  "title": "پلی استیشن، ایکس باکس و بازی",
+  "products": [
+    {
+      "id": 1,
+      "name": "کنسول بازی سونی مدل Playstation 4 Slim کد Region 2 CUH-2216B ظرفیت یک ترابایت",
+      "price": 10820000,
+      "discount": 0,
+      "rate": 3.9,
+      "votes": 100,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "مجموعه کنسول بازی سونی مدل PlayStation 5 ظرفیت 825 گیگابایت به همراه دسته اضافی",
+      "price": 28400000,
+      "discount": 0,
+      "rate": 4.4,
+      "votes": 10,
+      "seller": "عصر بازی",
+      "original": true,
+      "src": "/GameCate/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "کنسول بازی سونی مدل Playstation 5 ظرفیت 825 گیگابایت",
+      "price": 25600000,
+      "discount": 0,
+      "rate": 4.8,
+      "votes": 10,
+      "seller": "سروش تجارت",
+      "original": true,
+      "src": "/GameCate/3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "دسته بازی پلی استیشن ۴ مدل DUALSHOCK CUH-ZCT2E",
+      "price": 690000,
+      "discount": 53,
+      "rate": 3.9,
+      "votes": 347,
+      "seller": "گروه دایا",
+      "original": false,
+      "src": "/GameCate/4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "مجموعه کنسول بازی سونی مدل PlayStation 5 Drive ظرفیت 825 گیگابایت به همراه هدست و پایه شارژر",
+      "price": 38800000,
+      "discount": 0,
+      "rate": null,
+      "votes": null,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "کنسول بازی مایکروسافت مدل XBOX SERIES X ظرفیت 1 ترابایت",
+      "price": 19095000,
+      "discount": 0,
+      "rate": 4,
+      "votes": 1,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "مجموعه کنسول بازی سونی مدل Playstation 4 Slim ریجن 2 کد CUH-2216B ظرفیت 1 ترابایت",
+      "price": 12745000,
+      "discount": 0,
+      "rate": 3.8,
+      "votes": 8,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "کنسول بازی مایکروسافت مدل XBOX SERIES S ظرفیت 512 گیگابایت",
+      "price": 14000000,
+      "discount": 0,
+      "rate": 4,
+      "votes": 6,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "عینک واقعیت مجازی مدل 568",
+      "price": 115000,
+      "discount": 0,
+      "rate": 3.5,
+      "votes": 194,
+      "seller": "پخش حمید",
+      "original": true,
+      "src": "/GameCate/9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "فرمان بازی یورو کوانتم مدل 5in1 مناسب برای PS4-XBOX ONE-PS3-PC -SWITCH",
+      "price": 1820000,
+      "discount": 0,
+      "rate": 4.4,
+      "votes": 45,
+      "seller": "تصویر یوروکوانتوم",
+      "original": true,
+      "src": "/GameCate/10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "کنسول بازی سونی مدل Playstation 5 Digital Edition ظرفیت 825 گیگابایت",
+      "price": 25275000,
+      "discount": 0,
+      "rate": 4,
+      "votes": 2,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "دسته بازی پلی استیشن ۴ مدل 2021",
+      "price": 850000,
+      "discount": 59,
+      "rate": 4,
+      "votes": 24,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "کنسول بازی سونی مدل Playstation 4 Slim کد Region 2 CUH-2216A - ظرفیت 500 گیگابایت",
+      "price": 11000000,
+      "discount": 0,
+      "rate": 4,
+      "votes": 66,
+      "seller": "عصر بازی",
+      "original": true,
+      "src": "/GameCate/13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "کنسول بازی قابل حمل مدل K5",
+      "price": 685000,
+      "discount": 0,
+      "rate": 3.3,
+      "votes": 4,
+      "seller": "فاضل مدیا",
+      "original": true,
+      "src": "/GameCate/14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "بازی Demon’s Souls مخصوص PS5",
+      "price": 1540000,
+      "discount": 0,
+      "rate": null,
+      "votes": null,
+      "seller": "شادی لند",
+      "original": true,
+      "src": "/GameCate/15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "کنسول بازی مدل MD-2013",
+      "price": 850000,
+      "discount": 0,
+      "rate": 4.9,
+      "votes": 7,
+      "seller": "شادی لند",
+      "original": true,
+      "src": "/GameCate/16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "کنسول بازی سونی مدل Playstation 4 Slim کد Region 2 CUH-2216B ظرفیت یک ترابایت",
+      "price": 10820000,
+      "discount": 0,
+      "rate": 3.9,
+      "votes": 100,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/1.jpg"
+    },
+    {
+      "id": 18,
+      "name": "مجموعه کنسول بازی سونی مدل PlayStation 5 ظرفیت 825 گیگابایت به همراه دسته اضافی",
+      "price": 28400000,
+      "discount": 0,
+      "rate": 4.4,
+      "votes": 10,
+      "seller": "عصر بازی",
+      "original": true,
+      "src": "/GameCate/2.jpg"
+    },
+    {
+      "id": 19,
+      "name": "کنسول بازی سونی مدل Playstation 5 ظرفیت 825 گیگابایت",
+      "price": 25600000,
+      "discount": 0,
+      "rate": 4.8,
+      "votes": 10,
+      "seller": "سروش تجارت",
+      "original": true,
+      "src": "/GameCate/3.jpg"
+    },
+    {
+      "id": 20,
+      "name": "دسته بازی پلی استیشن ۴ مدل DUALSHOCK CUH-ZCT2E",
+      "price": 690000,
+      "discount": 53,
+      "rate": 3.9,
+      "votes": 347,
+      "seller": "گروه دایا",
+      "original": false,
+      "src": "/GameCate/4.jpg"
+    },
+    {
+      "id": 21,
+      "name": "مجموعه کنسول بازی سونی مدل PlayStation 5 Drive ظرفیت 825 گیگابایت به همراه هدست و پایه شارژر",
+      "price": 38800000,
+      "discount": 0,
+      "rate": null,
+      "votes": null,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/5.jpg"
+    },
+    {
+      "id": 22,
+      "name": "کنسول بازی مایکروسافت مدل XBOX SERIES X ظرفیت 1 ترابایت",
+      "price": 19095000,
+      "discount": 0,
+      "rate": 4,
+      "votes": 1,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/6.jpg"
+    },
+    {
+      "id": 23,
+      "name": "مجموعه کنسول بازی سونی مدل Playstation 4 Slim ریجن 2 کد CUH-2216B ظرفیت 1 ترابایت",
+      "price": 12745000,
+      "discount": 0,
+      "rate": 3.8,
+      "votes": 8,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/7.jpg"
+    },
+    {
+      "id": 24,
+      "name": "کنسول بازی مایکروسافت مدل XBOX SERIES S ظرفیت 512 گیگابایت",
+      "price": 14000000,
+      "discount": 0,
+      "rate": 4,
+      "votes": 6,
+      "seller": "کانن تهران",
+      "original": true,
+      "src": "/GameCate/8.jpg"
+    }
+  ]
+}

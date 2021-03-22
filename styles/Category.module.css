@@ -1,0 +1,425 @@
+/* Main Styles */
+
+.container {
+  background: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sideBarContainer {
+  width: 18%;
+}
+
+/* Side Bar */
+
+.sideBarItemContainer {
+  background-color: #fff;
+  box-shadow: 0 12px 12px 0 hsl(0deg 0% 71% / 11%);
+  border: 1px solid #dedede;
+  margin: 0 0 10px;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.sideBarItemContainer hr {
+  border: none;
+  border-top: 1px solid #f2f2f2;
+  margin: 7px 5px;
+}
+
+.sideBarTitle {
+  padding: 10px;
+  font-size: 11pt;
+  color: #535353;
+  font-weight: 600;
+}
+
+.chevron {
+  color: #6b6b6b;
+  font-size: 8pt;
+  font-weight: 300;
+  margin-left: 10px;
+}
+
+.sideBarCateTree {
+  padding: 5px 3px 20px;
+}
+
+.sideBarCateTree p {
+  margin-right: 10px;
+  margin-top: 8px;
+  font-size: 10pt;
+  color: #545454;
+}
+
+.sideBarCateTree div {
+  margin-right: 10px;
+  margin-top: 5px;
+}
+
+.lastChild {
+  margin-right: 20px !important;
+  margin-top: 5px;
+}
+
+.searchSection {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.searchInput {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #f0f0f1;
+  padding: 10px 45px 14px 10px;
+  border: 1px solid #f0f0f1;
+}
+
+.searchInput:focus {
+  outline: none;
+  border: 1px solid #00bfd6;
+  background: none;
+}
+
+.searchInput::placeholder {
+  font-size: 8pt;
+}
+
+.serachIcon {
+  color: #a1a3a8;
+  font-size: 18pt;
+  margin-left: -35px;
+  z-index: 99;
+}
+
+/* Brand Search */
+
+.brandList {
+  max-height: 333px;
+  overflow: auto;
+}
+
+.brandSerachChevron {
+  position: absolute;
+  left: 10%;
+  margin-top: 5px;
+  transition: transform 0.3s linear;
+}
+
+.singleBrand {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  cursor: pointer;
+  color: #3b3b3b;
+  user-select: none;
+}
+
+.singleBrand:hover {
+  background: #f9f9f9;
+}
+
+.singleBrand input {
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  margin-right: 30px;
+  border-radius: 4px;
+}
+
+.singleBrand input:checked ~ .checkmark {
+  background: #00bfd6;
+  border: 1px solid #1fa4b3;
+}
+
+.checkmark:after {
+  position: relative;
+  content: "";
+  display: none;
+  right: 4px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.singleBrand input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.singleBrand p {
+  margin-right: 20px;
+}
+
+.toggle {
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.5s, opacity 0.5s;
+}
+
+.toggle.open {
+  opacity: 1;
+  max-height: 500px;
+  transition: max-height 0.8s, opacity 0.3s;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* Switches */
+
+.switchContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.switchContainer p {
+  margin-right: 10px;
+  font-size: 11pt;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.switch input:checked + .slider {
+  background-color: #00bfd6;
+}
+
+.switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(17px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* Items */
+
+.main {
+  width: 78%;
+  padding-top: 20px;
+}
+
+.pageTitle {
+  display: flex;
+  justify-content: space-between;
+  color: #515151;
+  font-size: 11pt;
+}
+
+.itemsContainer {
+  background: #fff;
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 3%);
+  border: 1px solid #e4e4e4;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.offersItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #fff;
+  margin: 15px;
+  font-size: 4em;
+  border-radius: 8px;
+}
+
+.offerImageContainer {
+  width: 180px;
+  height: 180px;
+  margin: 20px auto;
+}
+
+.offerImageContainer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.offersItem p {
+  font-size: 10pt;
+}
+
+.offerTitle {
+  color: #535353;
+  font-size: 11pt;
+  max-width: 90%;
+  margin: auto;
+}
+
+.offerPriceSection {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 90%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.offerPriceSection del {
+  color: #acacac;
+  font-size: 11pt;
+}
+
+.discount {
+  font-size: 11pt;
+  color: #fff;
+  background-color: #fb3449;
+  min-width: 43px;
+  height: 23px;
+  margin: 0 10px;
+  padding: 4px 6px 1px;
+  text-align: center;
+  border-radius: 20px;
+  margin-bottom: 3px;
+  line-height: 1.375;
+}
+
+.finalPrice {
+  width: 100%;
+  color: #000;
+  font-weight: 700;
+  font-size: 16pt;
+  line-height: 1.1;
+  margin-top: 7px;
+}
+
+.finalPrice span {
+  font-weight: 400;
+  font-size: 11pt;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 90%;
+  text-align: left;
+  margin: 10px 0;
+  color: #737373;
+}
+
+.timer p {
+  direction: ltr;
+  margin: 0 6px;
+}
+
+.timer svg {
+  font-size: 13pt;
+}
+
+.singleItem {
+  width: 25%;
+  border: 1px solid #ebebeb;
+  border-top: none;
+  min-height: 424px;
+  position: relative;
+}
+
+.singleItem:hover {
+  box-shadow: 0 2px 17px 0 rgb(0 0 0 / 9%);
+}
+
+.rateContainer {
+  display: flex;
+}
+
+.rateStar {
+  color: #fac74b;
+  font-size: 12pt;
+  margin-right: 10px;
+  margin-top: 2px;
+}
+
+.vendor {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border-top: 1px solid #e4e4e4;
+  padding: 10px;
+  width: 90%;
+  margin: auto;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.vendorIcon {
+  color: #8d8d8d;
+  font-size: 16pt;
+  margin-left: 10px;
+}
+
+.vendor p {
+  font-size: 11pt;
+}
+
+.singleItem:hover .vendor {
+  opacity: 1;
+}
