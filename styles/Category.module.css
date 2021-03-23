@@ -380,6 +380,7 @@
   border-top: none;
   min-height: 424px;
   position: relative;
+  cursor: pointer;
 }
 
 .singleItem:hover {
