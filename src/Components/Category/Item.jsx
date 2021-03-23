@@ -11,7 +11,6 @@ import farsiNumber from "../../Helper/FarsiNumber";
 import Style from "../../../styles/Category.module.css";
 
 const Items = ({ data }) => {
-  console.log(data);
 
   const finalPrice = (price, discount) => {
     let result = price - price * (discount / 100);

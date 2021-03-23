@@ -11,6 +11,9 @@ import {
 //Components
 import Slider from "./Sliders/SpecialOffersSlider";
 
+// Helper
+import {baseUrl} from '../Helper/Config'
+
 //Styles
 import Styles from "../../styles/SpecialOffers.module.css";
 
@@ -23,12 +26,12 @@ const SpecialOffers = ({ data }) => {
     >
       <div className={Styles.main}>
         <div className={Styles.firstCol}>
-          <Link href="#">
+          <Link href={`${baseUrl}/category`}>
             <a>
               <img src={data.mainPic} alt="" />
             </a>
           </Link>
-          <Link href="#">
+          <Link href={`${baseUrl}/category`}>
             <a>
               <div className={Styles.btn}>
                 <p>مشاهده همه</p>

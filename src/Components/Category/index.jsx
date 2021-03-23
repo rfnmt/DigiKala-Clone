@@ -9,7 +9,7 @@ import Item from "./Item";
 import Style from "../../../styles/Category.module.css";
 
 const CategoryBody = ({ title, products }) => {
-  // console.log(title, products)
+  console.log(products)
 
   return (
     <div className={Style.container}>
@@ -24,7 +24,7 @@ const CategoryBody = ({ title, products }) => {
           <p>{`${products ? products.length : 0} کالا`}</p>
         </div>
         <div className={Style.itemsContainer}>
-          {products.map((product) => (
+          {products.map((product, index) => (
             <Item key={product.id} data={product} />
           ))}
         </div>

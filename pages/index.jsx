@@ -7,7 +7,7 @@ import SpecialOffers from "../src/Components/SpecialOffers";
 import FourBanners from "../src/Components/BannersSection/FourBannersSection";
 import CommonSlider from "../src/Components/Sliders/CommonSlider";
 import SingleItemSlider from "../src/Components/Sliders/SingleItemSlider";
-import BackToTop from "../src/Components/backToTop";
+import BackToTop from "../src/Components/BackToTop";
 import Footer from "../src/Components/Footer";
 
 // Helper

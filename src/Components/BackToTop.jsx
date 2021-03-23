@@ -8,7 +8,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 //Styles
 import Styles from "../../styles/BackToTop.module.css";
 
-const backToTop = () => {
+const BackToTop = () => {
   return (
     <div className={Styles.backToTop}>
       <Link href="#top">
@@ -23,4 +23,4 @@ const backToTop = () => {
   );
 };
 
-export default backToTop;
+export default BackToTop;

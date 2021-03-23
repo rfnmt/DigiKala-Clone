@@ -4,7 +4,7 @@
   position: relative;
   background-color: #fff !important;
   box-shadow: 0 7px 8px 0 rgb(0 0 0 / 4%);
-  z-index: 11;
+  z-index: 99;
 }
 
 /* Main Section of the Header  */
