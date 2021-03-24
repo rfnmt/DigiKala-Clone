@@ -35,7 +35,7 @@ a {
 
 /* react-elastic-carousel Styles */
 
-.galrjd {
+.rec-carousel {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,7 +67,7 @@ a {
   box-shadow: 1.5px 0 4px 0 rgb(0 0 0 / 15%) !important;
 }
 
-.cukhLH {
+.rec-slider-container {
   margin: 0 !important;
 }
 
@@ -75,8 +75,8 @@ a {
   margin: 0 5px !important;
 }
 
-.lgksPe:hover:enabled,
-.lgksPe:focus:enabled {
+.rec-arrow-right:hover:enabled,
+.rec-arrow-right:focus:enabled {
   color: #000 !important;
 }
 
@@ -87,4 +87,3 @@ a {
 .Slides_commonContainer__1FO87 .rec-arrow-right {
   left: 0 !important;
 }
-
