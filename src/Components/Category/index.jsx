@@ -1,5 +1,6 @@
 import React from "react";
 import StickyBox from "react-sticky-box";
+import PropTypes from "prop-types";
 
 //Components
 import SideBar from "./SideBar";
@@ -29,6 +30,11 @@ const CategoryBody = ({ title, products }) => {
       </div>
     </div>
   );
+};
+
+CategoryBody.propTypes = {
+  title: PropTypes.string,
+  products: PropTypes.array,
 };
 
 export default CategoryBody;

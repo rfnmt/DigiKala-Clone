@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import PropTypes from "prop-types";
 
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,7 +12,7 @@ import farsiNumber from "../../Helper/FarsiNumber";
 //Styles
 import Style from "../../../styles/Category.module.css";
 
-const Items = ({ data }) => {
+const Item = ({ data }) => {
   const finalPrice = (price, discount) => {
     let result = price - price * (discount / 100);
     return farsiNumber(result);
@@ -56,4 +57,8 @@ const Items = ({ data }) => {
   );
 };
 
-export default Items;
+Item.propTypes = {
+  data: PropTypes.object,
+};
+
+export default Item;

@@ -1,6 +1,7 @@
 import React, { Component, useState, useEffect } from "react";
 import Carousel from "react-elastic-carousel";
 import Link from "next/link";
+import PropTypes from "prop-types";
 
 //Helper
 import farsiNumber from "../../Helper/FarsiNumber";
@@ -31,8 +32,8 @@ class SpecialOffersSlider extends Component {
     return (
       <Carousel breakPoints={this.breakPoints} isRTL={true} pagination={false}>
         {offers.map((offer) => (
-          <Link href="http://localhost:3000/product">
-            <a key={offer.id} className={Styles.offersItem}>
+          <Link href="http://localhost:3000/product" key={offer.id}>
+            <a className={Styles.offersItem}>
               <Item offer={offer} />
             </a>
           </Link>
@@ -41,6 +42,8 @@ class SpecialOffersSlider extends Component {
     );
   }
 }
+
+// Item Component
 
 const Item = ({ offer }) => {
   const [time, setTime] = useState(offer.time);
@@ -101,6 +104,14 @@ const Item = ({ offer }) => {
       </div>
     </>
   );
+};
+
+SpecialOffersSlider.propTypes = {
+  offers: PropTypes.array,
+};
+
+Item.propTypes = {
+  offer: PropTypes.object,
 };
 
 export default SpecialOffersSlider;

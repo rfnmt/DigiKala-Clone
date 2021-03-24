@@ -1,5 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import PropTypes from "prop-types";
+
+//Components
+import Slider from "./Sliders/SpecialOffersSlider";
+
+// Helper
+import { baseUrl } from "../Helper/Config";
 
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,12 +14,6 @@ import {
   faChevronRight,
   faChevronLeft,
 } from "@fortawesome/free-solid-svg-icons";
-
-//Components
-import Slider from "./Sliders/SpecialOffersSlider";
-
-// Helper
-import {baseUrl} from '../Helper/Config'
 
 //Styles
 import Styles from "../../styles/SpecialOffers.module.css";
@@ -51,6 +52,10 @@ const SpecialOffers = ({ data }) => {
       </div>
     </section>
   );
+};
+
+SpecialOffers.propTypes = {
+  data: PropTypes.object,
 };
 
 export default SpecialOffers;
