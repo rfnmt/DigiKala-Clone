@@ -19,7 +19,7 @@ const Item = ({ data }) => {
   };
 
   return (
-    <Link href="http://localhost:3000/product">
+    <Link href="/product">
       <a className={Style.singleItem}>
         <div className={Style.offerImageContainer}>
           <img src={data.src} alt="" />

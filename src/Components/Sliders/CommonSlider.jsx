@@ -30,7 +30,7 @@ const CommonSlider = ({ data }) => {
       <div className={Styles.commonSlider}>
         <Carousel breakPoints={breakPoints} isRTL={true} pagination={false}>
           {data.products.map((offer) => (
-            <Link href="http://localhost:3000/product" key={offer.id}>
+            <Link href="/product" key={offer.id}>
               <a className={Styles.commonItem}>
                 <Item offer={offer} />
               </a>

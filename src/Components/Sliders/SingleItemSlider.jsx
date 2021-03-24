@@ -25,7 +25,7 @@ const SingleItemSlider = ({ data }) => {
           enableAutoPlay={true}
         >
           {data.offers.map((offer) => (
-            <Link href="http://localhost:3000/product" key={offer.id}>
+            <Link href="/product" key={offer.id}>
               <a className={Styles.singleItem}>
                 <Item offer={offer} />
               </a>

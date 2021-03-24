@@ -17,9 +17,7 @@ import Style from "../../../styles/Product.module.css";
 
 const Gallery = () => {
   const [showModal, setShowModal] = useState(false);
-  const [activePic, setActivePic] = useState(
-    "http://localhost:3000/SingleProduct/02.jpg"
-  );
+  const [activePic, setActivePic] = useState("/SingleProduct/02.jpg");
 
   const show = () => {
     setShowModal(showModal ? false : true);

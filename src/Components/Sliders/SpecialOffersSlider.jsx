@@ -32,7 +32,7 @@ class SpecialOffersSlider extends Component {
     return (
       <Carousel breakPoints={this.breakPoints} isRTL={true} pagination={false}>
         {offers.map((offer) => (
-          <Link href="http://localhost:3000/product" key={offer.id}>
+          <Link href="/product" key={offer.id}>
             <a className={Styles.offersItem}>
               <Item offer={offer} />
             </a>
