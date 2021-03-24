@@ -1,5 +1,6 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
+import Link from "next/link";
 
 //Helper
 import farsiNumber from "../../Helper/FarsiNumber";
@@ -23,9 +24,11 @@ const SingleItemSlider = ({ data }) => {
           enableAutoPlay={true}
         >
           {data.offers.map((offer) => (
-            <div key={offer.id} className={Styles.singleItem}>
-              <Item offer={offer} />
-            </div>
+            <Link href="http://localhost:3000/product">
+              <a key={offer.id} className={Styles.singleItem}>
+                <Item offer={offer} />
+              </a>
+            </Link>
           ))}
         </Carousel>
       </div>

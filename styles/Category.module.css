@@ -375,6 +375,7 @@
 }
 
 .singleItem {
+  display: block;
   width: 25%;
   border: 1px solid #ebebeb;
   border-top: none;

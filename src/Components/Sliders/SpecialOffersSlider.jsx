@@ -1,5 +1,6 @@
 import React, { Component, useState, useEffect } from "react";
 import Carousel from "react-elastic-carousel";
+import Link from "next/link";
 
 //Helper
 import farsiNumber from "../../Helper/FarsiNumber";
@@ -30,9 +31,11 @@ class SpecialOffersSlider extends Component {
     return (
       <Carousel breakPoints={this.breakPoints} isRTL={true} pagination={false}>
         {offers.map((offer) => (
-          <div key={offer.id} className={Styles.offersItem}>
-            <Item offer={offer} />
-          </div>
+          <Link href="http://localhost:3000/product">
+            <a key={offer.id} className={Styles.offersItem}>
+              <Item offer={offer} />
+            </a>
+          </Link>
         ))}
       </Carousel>
     );

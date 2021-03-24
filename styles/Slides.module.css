@@ -50,10 +50,12 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  height: 100%;
   background-color: #fff;
   margin: 15px;
   font-size: 4em;
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .offerImageContainer {
@@ -173,6 +175,7 @@
 }
 
 .commonItem {
+  display: block;
   margin: 20px 10px;
   border-radius: 8px;
   transition-duration: 0.1s;
@@ -185,6 +188,12 @@
 }
 
 /* Single Item Slider */
+
+.singleItem {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 
 .singleContainer {
   background-color: #fff;
