@@ -8,7 +8,7 @@ import CategoryBody from "../src/Components/Category";
 
 export default function Category({ items }) {
   return (
-    items && (
+    items && items.data && (
       <>
         <Header />
         <CategoryBody title={items.data.title} products={items.data.products} />
