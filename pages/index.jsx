@@ -43,9 +43,12 @@ export default function Home({ offers, superMarket, charger, single, mobile }) {
 }
 
 export async function getStaticProps() {
-  const offers = await fetch(
-    `${process.env.BASE_URL}/api/special-offers`
-  ).then((res) => res.json());
+  const offers = await fetch(`${process.env.BASE_URL}/api/special-offers`, {
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": "*",
+    },
+  }).then((res) => res.json());
 
   const superMarket = await fetch(
     `${process.env.BASE_URL}/api/super-market-offers`
