@@ -51,20 +51,35 @@ export async function getStaticProps() {
   }).then((res) => res.json());
 
   const superMarket = await fetch(
-    `${process.env.BASE_URL}/api/super-market-offers`
+    `${process.env.BASE_URL}/api/super-market-offers`,
+    {
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "User-Agent": "*",
+      },
+    }
   ).then((res) => res.json());
 
-  const charger = await fetch(
-    `${process.env.BASE_URL}/api/charger`
-  ).then((res) => res.json());
+  const charger = await fetch(`${process.env.BASE_URL}/api/charger`, {
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": "*",
+    },
+  }).then((res) => res.json());
 
-  const single = await fetch(`${process.env.BASE_URL}/api/single`).then((res) =>
-    res.json()
-  );
+  const single = await fetch(`${process.env.BASE_URL}/api/single`, {
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": "*",
+    },
+  }).then((res) => res.json());
 
-  const mobile = await fetch(`${process.env.BASE_URL}/api/mobile`).then((res) =>
-    res.json()
-  );
+  const mobile = await fetch(`${process.env.BASE_URL}/api/mobile`, {
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": "*",
+    },
+  }).then((res) => res.json());
 
   return {
     props: { offers, superMarket, charger, single, mobile },

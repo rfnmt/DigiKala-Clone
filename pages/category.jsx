@@ -20,9 +20,12 @@ export default function Category({ items }) {
 }
 
 export async function getStaticProps() {
-  const items = await fetch(
-    `${process.env.BASE_URL}/api/game-category`
-  ).then((res) => res.json());
+  const items = await fetch(`${process.env.BASE_URL}/api/game-category`, {
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "User-Agent": "*",
+    },
+  }).then((res) => res.json());
 
   return {
     props: { items },
