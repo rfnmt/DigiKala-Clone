@@ -39,7 +39,6 @@ const Header = () => {
       // upscroll code
       setShowNavBar(true);
     }
-    // scrollPos = st <= 0 ? 0 : st;
     setScrollPos(st);
   };
 

@@ -19,50 +19,46 @@ const CommonSlider = ({ data }) => {
     { width: 1750, itemsToShow: 6 },
   ];
 
-  return (
-    data && (
-      <div className={Styles.commonContainer}>
-        <div className={Styles.header}>
-          <div className={Styles.commonTitle}>
-            <p>{data.title}</p>
-          </div>
-          <div className={Styles.headerSpace}></div>
+  return data ? (
+    <div className={Styles.commonContainer}>
+      <div className={Styles.header}>
+        <div className={Styles.commonTitle}>
+          <p>{data.title}</p>
         </div>
-        <div className={Styles.commonSlider}>
-          <Carousel breakPoints={breakPoints} isRTL={true} pagination={false}>
-            {data.products.map((offer) => (
-              <Link href="http://localhost:3000/product" key={offer.id}>
-                <a className={Styles.commonItem}>
-                  <Item offer={offer} />
-                </a>
-              </Link>
-            ))}
-          </Carousel>
-        </div>
+        <div className={Styles.headerSpace}></div>
       </div>
-    )
-  );
+      <div className={Styles.commonSlider}>
+        <Carousel breakPoints={breakPoints} isRTL={true} pagination={false}>
+          {data.products.map((offer) => (
+            <Link href="http://localhost:3000/product" key={offer.id}>
+              <a className={Styles.commonItem}>
+                <Item offer={offer} />
+              </a>
+            </Link>
+          ))}
+        </Carousel>
+      </div>
+    </div>
+  ) : null;
 };
 
 const Item = ({ offer }) => {
-  return (
-    offer && (
-      <>
-        <div className={Styles.offerImageContainer}>
-          <img src={offer.src} alt="" />
+  return offer ? (
+    <>
+      <div className={Styles.offerImageContainer}>
+        <img src={offer.src} alt="" />
+      </div>
+      <div>
+        <p className={Styles.offerTitle}>{offer.name}</p>
+      </div>
+      <div className={Styles.offerPriceSection}>
+        <div className={Styles.finalPrice}>
+          {farsiNumber(offer.price)}
+          <span>تومان</span>
         </div>
-        <div>
-          <p className={Styles.offerTitle}>{offer.name}</p>
-        </div>
-        <div className={Styles.offerPriceSection}>
-          <div className={Styles.finalPrice}>
-            {farsiNumber(offer.price)}
-            <span>تومان</span>
-          </div>
-        </div>
-      </>
-    )
-  );
+      </div>
+    </>
+  ) : null;
 };
 
 CommonSlider.propTypes = {

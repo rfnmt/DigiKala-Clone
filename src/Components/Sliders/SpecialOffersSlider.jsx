@@ -29,23 +29,17 @@ class SpecialOffersSlider extends Component {
   render() {
     const { offers } = this.props;
 
-    return (
-      offers && (
-        <Carousel
-          breakPoints={this.breakPoints}
-          isRTL={true}
-          pagination={false}
-        >
-          {offers.map((offer) => (
-            <Link href="http://localhost:3000/product" key={offer.id}>
-              <a className={Styles.offersItem}>
-                <Item offer={offer} />
-              </a>
-            </Link>
-          ))}
-        </Carousel>
-      )
-    );
+    return offers ? (
+      <Carousel breakPoints={this.breakPoints} isRTL={true} pagination={false}>
+        {offers.map((offer) => (
+          <Link href="http://localhost:3000/product" key={offer.id}>
+            <a className={Styles.offersItem}>
+              <Item offer={offer} />
+            </a>
+          </Link>
+        ))}
+      </Carousel>
+    ) : null;
   }
 }
 
@@ -86,32 +80,30 @@ const Item = ({ offer }) => {
     }, 1000);
   };
 
-  return (
-    offer && (
-      <>
-        <div className={Styles.offerImageContainer}>
-          <img src={offer.src} alt="" />
+  return offer ? (
+    <>
+      <div className={Styles.offerImageContainer}>
+        <img src={offer.src} alt="" />
+      </div>
+      <div>
+        <p className={Styles.offerTitle}>{offer.name}</p>
+      </div>
+      <div className={Styles.offerPriceSection}>
+        <del>{farsiNumber(offer.price)}</del>
+        <div className={Styles.discount}>
+          {`${farsiNumber(offer.discount)}%`}
         </div>
-        <div>
-          <p className={Styles.offerTitle}>{offer.name}</p>
+        <div className={Styles.finalPrice}>
+          {finalPrice(offer.price, offer.discount)}
+          <span>تومان</span>
         </div>
-        <div className={Styles.offerPriceSection}>
-          <del>{farsiNumber(offer.price)}</del>
-          <div className={Styles.discount}>
-            {`${farsiNumber(offer.discount)}%`}
-          </div>
-          <div className={Styles.finalPrice}>
-            {finalPrice(offer.price, offer.discount)}
-            <span>تومان</span>
-          </div>
-        </div>
-        <div className={Styles.timer}>
-          <p>{`${hours} : ${minutes} : ${seconds}`}</p>
-          <FontAwesomeIcon icon={faClock} />
-        </div>
-      </>
-    )
-  );
+      </div>
+      <div className={Styles.timer}>
+        <p>{`${hours} : ${minutes} : ${seconds}`}</p>
+        <FontAwesomeIcon icon={faClock} />
+      </div>
+    </>
+  ) : null;
 };
 
 SpecialOffersSlider.propTypes = {

@@ -16,41 +16,39 @@ import {
 import Styles from "../../styles/SpecialOffers.module.css";
 
 const SpecialOffers = ({ data }) => {
-  return (
-    data && (
-      <section
-        className={
-          data.color === "red" ? Styles.containerRed : Styles.containerGreen
-        }
-      >
-        <div className={Styles.main}>
-          <div className={Styles.firstCol}>
-            <Link href="/category">
-              <a>
-                <img src={data.mainPic} alt="" />
-              </a>
-            </Link>
-            <Link href="/category">
-              <a>
-                <div className={Styles.btn}>
-                  <p>مشاهده همه</p>
-                  <div>
-                    <FontAwesomeIcon
-                      icon={faChevronLeft}
-                      className={Styles.btnIcon}
-                    />
-                  </div>
+  return data ? (
+    <section
+      className={
+        data.color === "red" ? Styles.containerRed : Styles.containerGreen
+      }
+    >
+      <div className={Styles.main}>
+        <div className={Styles.firstCol}>
+          <Link href="/category">
+            <a>
+              <img src={data.mainPic} alt="" />
+            </a>
+          </Link>
+          <Link href="/category">
+            <a>
+              <div className={Styles.btn}>
+                <p>مشاهده همه</p>
+                <div>
+                  <FontAwesomeIcon
+                    icon={faChevronLeft}
+                    className={Styles.btnIcon}
+                  />
                 </div>
-              </a>
-            </Link>
-          </div>
-          <div className={Styles.slideContainer}>
-            <Slider offers={data.offers} />
-          </div>
+              </div>
+            </a>
+          </Link>
         </div>
-      </section>
-    )
-  );
+        <div className={Styles.slideContainer}>
+          <Slider offers={data.offers} />
+        </div>
+      </div>
+    </section>
+  ) : null;
 };
 
 SpecialOffers.propTypes = {
