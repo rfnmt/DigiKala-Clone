@@ -29,11 +29,14 @@ const DigiClubDropDown = () => {
 
     return () => {
       active = false;
+      setRemainTime(0);
     };
   }, []);
 
   useEffect(() => {
     timer(remainTime);
+
+    return () => setRemainTime(0);
   }, [remainTime]);
 
   const timer = (time) => {

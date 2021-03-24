@@ -47,6 +47,8 @@ const Item = ({ offer }) => {
 
   useEffect(() => {
     timer(time);
+
+    return () => setTime(0);
   }, [time]);
 
   const finalPrice = (price, discount) => {

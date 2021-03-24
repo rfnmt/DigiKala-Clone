@@ -35,10 +35,10 @@ const Header = () => {
   const handleScroll = () => {
     let st = window.pageYOffset || document.documentElement.scrollTop;
     setSticky(st > 0 ? true : false);
-    if (st > scrollPos + 50) {
+    if (st > scrollPos) {
       // downscroll code
       setShowNavBar(false);
-    } else if (st < scrollPos - 50) {
+    } else if (st < scrollPos) {
       // upscroll code
       setShowNavBar(true);
     }
@@ -50,7 +50,7 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener("scroll", () => handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   });
 

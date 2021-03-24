@@ -9,8 +9,6 @@ import Item from "./Item";
 import Style from "../../../styles/Category.module.css";
 
 const CategoryBody = ({ title, products }) => {
-  console.log(products)
-
   return (
     <div className={Style.container}>
       <aside className={Style.sideBarContainer}>

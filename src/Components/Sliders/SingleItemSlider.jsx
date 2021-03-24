@@ -21,7 +21,6 @@ const SingleItemSlider = ({ data }) => {
           pagination={false}
           showArrows={false}
           enableAutoPlay={true}
-          autoPlaySpeed={7000}
         >
           {data.offers.map((offer) => (
             <div key={offer.id} className={Styles.singleItem}>
