@@ -17,37 +17,39 @@ import Styles from "../../styles/SpecialOffers.module.css";
 
 const SpecialOffers = ({ data }) => {
   return (
-    <section
-      className={
-        data.color === "red" ? Styles.containerRed : Styles.containerGreen
-      }
-    >
-      <div className={Styles.main}>
-        <div className={Styles.firstCol}>
-          <Link href="/category">
-            <a>
-              <img src={data.mainPic} alt="" />
-            </a>
-          </Link>
-          <Link href="/category">
-            <a>
-              <div className={Styles.btn}>
-                <p>مشاهده همه</p>
-                <div>
-                  <FontAwesomeIcon
-                    icon={faChevronLeft}
-                    className={Styles.btnIcon}
-                  />
+    data && (
+      <section
+        className={
+          data.color === "red" ? Styles.containerRed : Styles.containerGreen
+        }
+      >
+        <div className={Styles.main}>
+          <div className={Styles.firstCol}>
+            <Link href="/category">
+              <a>
+                <img src={data.mainPic} alt="" />
+              </a>
+            </Link>
+            <Link href="/category">
+              <a>
+                <div className={Styles.btn}>
+                  <p>مشاهده همه</p>
+                  <div>
+                    <FontAwesomeIcon
+                      icon={faChevronLeft}
+                      className={Styles.btnIcon}
+                    />
+                  </div>
                 </div>
-              </div>
-            </a>
-          </Link>
+              </a>
+            </Link>
+          </div>
+          <div className={Styles.slideContainer}>
+            <Slider offers={data.offers} />
+          </div>
         </div>
-        <div className={Styles.slideContainer}>
-          <Slider offers={data.offers} />
-        </div>
-      </div>
-    </section>
+      </section>
+    )
   );
 };
 

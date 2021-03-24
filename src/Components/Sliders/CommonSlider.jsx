@@ -20,44 +20,48 @@ const CommonSlider = ({ data }) => {
   ];
 
   return (
-    <div className={Styles.commonContainer}>
-      <div className={Styles.header}>
-        <div className={Styles.commonTitle}>
-          <p>{data.title}</p>
+    data && (
+      <div className={Styles.commonContainer}>
+        <div className={Styles.header}>
+          <div className={Styles.commonTitle}>
+            <p>{data.title}</p>
+          </div>
+          <div className={Styles.headerSpace}></div>
         </div>
-        <div className={Styles.headerSpace}></div>
+        <div className={Styles.commonSlider}>
+          <Carousel breakPoints={breakPoints} isRTL={true} pagination={false}>
+            {data.products.map((offer) => (
+              <Link href="http://localhost:3000/product" key={offer.id}>
+                <a className={Styles.commonItem}>
+                  <Item offer={offer} />
+                </a>
+              </Link>
+            ))}
+          </Carousel>
+        </div>
       </div>
-      <div className={Styles.commonSlider}>
-        <Carousel breakPoints={breakPoints} isRTL={true} pagination={false}>
-          {data.products.map((offer) => (
-            <Link href="http://localhost:3000/product" key={offer.id}>
-              <a className={Styles.commonItem}>
-                <Item offer={offer} />
-              </a>
-            </Link>
-          ))}
-        </Carousel>
-      </div>
-    </div>
+    )
   );
 };
 
 const Item = ({ offer }) => {
   return (
-    <>
-      <div className={Styles.offerImageContainer}>
-        <img src={offer.src} alt="" />
-      </div>
-      <div>
-        <p className={Styles.offerTitle}>{offer.name}</p>
-      </div>
-      <div className={Styles.offerPriceSection}>
-        <div className={Styles.finalPrice}>
-          {farsiNumber(offer.price)}
-          <span>تومان</span>
+    offer && (
+      <>
+        <div className={Styles.offerImageContainer}>
+          <img src={offer.src} alt="" />
         </div>
-      </div>
-    </>
+        <div>
+          <p className={Styles.offerTitle}>{offer.name}</p>
+        </div>
+        <div className={Styles.offerPriceSection}>
+          <div className={Styles.finalPrice}>
+            {farsiNumber(offer.price)}
+            <span>تومان</span>
+          </div>
+        </div>
+      </>
+    )
   );
 };
 

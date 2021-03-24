@@ -8,12 +8,14 @@ import CategoryBody from "../src/Components/Category";
 
 export default function Category({ items }) {
   return (
-    <>
-      <Header />
-      <CategoryBody title={items.data.title} products={items.data.products} />
-      <BackToTop />
-      <Footer />
-    </>
+    items && (
+      <>
+        <Header />
+        <CategoryBody title={items.data.title} products={items.data.products} />
+        <BackToTop />
+        <Footer />
+      </>
+    )
   );
 }
 

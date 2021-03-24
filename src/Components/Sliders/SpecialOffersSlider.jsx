@@ -30,15 +30,21 @@ class SpecialOffersSlider extends Component {
     const { offers } = this.props;
 
     return (
-      <Carousel breakPoints={this.breakPoints} isRTL={true} pagination={false}>
-        {offers.map((offer) => (
-          <Link href="http://localhost:3000/product" key={offer.id}>
-            <a className={Styles.offersItem}>
-              <Item offer={offer} />
-            </a>
-          </Link>
-        ))}
-      </Carousel>
+      offers && (
+        <Carousel
+          breakPoints={this.breakPoints}
+          isRTL={true}
+          pagination={false}
+        >
+          {offers.map((offer) => (
+            <Link href="http://localhost:3000/product" key={offer.id}>
+              <a className={Styles.offersItem}>
+                <Item offer={offer} />
+              </a>
+            </Link>
+          ))}
+        </Carousel>
+      )
     );
   }
 }
@@ -81,28 +87,30 @@ const Item = ({ offer }) => {
   };
 
   return (
-    <>
-      <div className={Styles.offerImageContainer}>
-        <img src={offer.src} alt="" />
-      </div>
-      <div>
-        <p className={Styles.offerTitle}>{offer.name}</p>
-      </div>
-      <div className={Styles.offerPriceSection}>
-        <del>{farsiNumber(offer.price)}</del>
-        <div className={Styles.discount}>
-          {`${farsiNumber(offer.discount)}%`}
+    offer && (
+      <>
+        <div className={Styles.offerImageContainer}>
+          <img src={offer.src} alt="" />
         </div>
-        <div className={Styles.finalPrice}>
-          {finalPrice(offer.price, offer.discount)}
-          <span>تومان</span>
+        <div>
+          <p className={Styles.offerTitle}>{offer.name}</p>
         </div>
-      </div>
-      <div className={Styles.timer}>
-        <p>{`${hours} : ${minutes} : ${seconds}`}</p>
-        <FontAwesomeIcon icon={faClock} />
-      </div>
-    </>
+        <div className={Styles.offerPriceSection}>
+          <del>{farsiNumber(offer.price)}</del>
+          <div className={Styles.discount}>
+            {`${farsiNumber(offer.discount)}%`}
+          </div>
+          <div className={Styles.finalPrice}>
+            {finalPrice(offer.price, offer.discount)}
+            <span>تومان</span>
+          </div>
+        </div>
+        <div className={Styles.timer}>
+          <p>{`${hours} : ${minutes} : ${seconds}`}</p>
+          <FontAwesomeIcon icon={faClock} />
+        </div>
+      </>
+    )
   );
 };
 
