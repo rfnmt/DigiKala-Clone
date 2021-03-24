@@ -29,7 +29,7 @@ class SpecialOffersSlider extends Component {
   render() {
     const { offers } = this.props;
 
-    return offers ? (
+    return (
       <Carousel breakPoints={this.breakPoints} isRTL={true} pagination={false}>
         {offers.map((offer) => (
           <Link href="http://localhost:3000/product" key={offer.id}>
@@ -39,7 +39,7 @@ class SpecialOffersSlider extends Component {
           </Link>
         ))}
       </Carousel>
-    ) : null;
+    );
   }
 }
 
@@ -80,7 +80,7 @@ const Item = ({ offer }) => {
     }, 1000);
   };
 
-  return offer ? (
+  return (
     <>
       <div className={Styles.offerImageContainer}>
         <img src={offer.src} alt="" />
@@ -103,7 +103,7 @@ const Item = ({ offer }) => {
         <FontAwesomeIcon icon={faClock} />
       </div>
     </>
-  ) : null;
+  );
 };
 
 SpecialOffersSlider.propTypes = {

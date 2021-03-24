@@ -10,7 +10,7 @@ import farsiNumber from "../../Helper/FarsiNumber";
 import Styles from "../../../styles/Slides.module.css";
 
 const SingleItemSlider = ({ data }) => {
-  return data ? (
+  return (
     <div className={Styles.singleContainer}>
       <div className={Styles.singleTitle}>
         <p>پیشنهادات لحظه ای برای شما</p>
@@ -34,11 +34,11 @@ const SingleItemSlider = ({ data }) => {
         </Carousel>
       </div>
     </div>
-  ) : null;
+  );
 };
 
 const Item = ({ offer }) => {
-  return offer ? (
+  return (
     <>
       <div className={Styles.offerImageContainer}>
         <img src={offer.src} alt="" />
@@ -53,7 +53,7 @@ const Item = ({ offer }) => {
         </div>
       </div>
     </>
-  ) : null;
+  );
 };
 
 SingleItemSlider.propTypes = {

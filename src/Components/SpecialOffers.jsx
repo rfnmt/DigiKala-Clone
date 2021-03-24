@@ -16,7 +16,7 @@ import {
 import Styles from "../../styles/SpecialOffers.module.css";
 
 const SpecialOffers = ({ data }) => {
-  return data ? (
+  return (
     <section
       className={
         data.color === "red" ? Styles.containerRed : Styles.containerGreen
@@ -48,7 +48,7 @@ const SpecialOffers = ({ data }) => {
         </div>
       </div>
     </section>
-  ) : null;
+  );
 };
 
 SpecialOffers.propTypes = {

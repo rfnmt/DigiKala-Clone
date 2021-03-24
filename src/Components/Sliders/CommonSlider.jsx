@@ -19,7 +19,7 @@ const CommonSlider = ({ data }) => {
     { width: 1750, itemsToShow: 6 },
   ];
 
-  return data ? (
+  return (
     <div className={Styles.commonContainer}>
       <div className={Styles.header}>
         <div className={Styles.commonTitle}>
@@ -39,11 +39,11 @@ const CommonSlider = ({ data }) => {
         </Carousel>
       </div>
     </div>
-  ) : null;
+  );
 };
 
 const Item = ({ offer }) => {
-  return offer ? (
+  return (
     <>
       <div className={Styles.offerImageContainer}>
         <img src={offer.src} alt="" />
@@ -58,7 +58,7 @@ const Item = ({ offer }) => {
         </div>
       </div>
     </>
-  ) : null;
+  );
 };
 
 CommonSlider.propTypes = {

@@ -7,14 +7,14 @@ import Footer from "../src/Components/Footer";
 import CategoryBody from "../src/Components/Category";
 
 export default function Category({ items }) {
-  return items && items.data ? (
+  return (
     <>
       <Header />
       <CategoryBody title={items.data.title} products={items.data.products} />
       <BackToTop />
       <Footer />
     </>
-  ) : null;
+  );
 }
 
 export async function getStaticProps() {

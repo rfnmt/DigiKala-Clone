@@ -10,7 +10,7 @@ import Item from "./Item";
 import Style from "../../../styles/Category.module.css";
 
 const CategoryBody = ({ title, products }) => {
-  return title && products ? (
+  return (
     <div className={Style.container}>
       <aside className={Style.sideBarContainer}>
         <StickyBox offsetTop={100} offsetBottom={20}>
@@ -29,7 +29,7 @@ const CategoryBody = ({ title, products }) => {
         </div>
       </div>
     </div>
-  ) : null;
+  );
 };
 
 CategoryBody.propTypes = {

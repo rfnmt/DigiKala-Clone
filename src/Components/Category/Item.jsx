@@ -18,7 +18,7 @@ const Item = ({ data }) => {
     return farsiNumber(result);
   };
 
-  return data ? (
+  return (
     <Link href="http://localhost:3000/product">
       <a className={Style.singleItem}>
         <div className={Style.offerImageContainer}>
@@ -54,7 +54,7 @@ const Item = ({ data }) => {
         </div>
       </a>
     </Link>
-  ) : null;
+  );
 };
 
 Item.propTypes = {
