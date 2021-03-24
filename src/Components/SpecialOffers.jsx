@@ -5,9 +5,6 @@ import PropTypes from "prop-types";
 //Components
 import Slider from "./Sliders/SpecialOffersSlider";
 
-// Helper
-import { baseUrl } from "../Helper/Config";
-
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -27,12 +24,12 @@ const SpecialOffers = ({ data }) => {
     >
       <div className={Styles.main}>
         <div className={Styles.firstCol}>
-          <Link href={`${baseUrl}/category`}>
+          <Link href="/category">
             <a>
               <img src={data.mainPic} alt="" />
             </a>
           </Link>
-          <Link href={`${baseUrl}/category`}>
+          <Link href="/category">
             <a>
               <div className={Styles.btn}>
                 <p>مشاهده همه</p>

@@ -10,9 +10,6 @@ import SingleItemSlider from "../src/Components/Sliders/SingleItemSlider";
 import BackToTop from "../src/Components/BackToTop";
 import Footer from "../src/Components/Footer";
 
-// Helper
-import { baseUrl } from "../src/Helper/Config";
-
 //Styles
 import Styles from "../styles/Home.module.css";
 
@@ -46,21 +43,25 @@ export default function Home({ offers, superMarket, charger, single, mobile }) {
 }
 
 export async function getStaticProps() {
-  const offers = await fetch(`${baseUrl}/api/special-offers`).then((res) =>
-    res.json()
-  );
-
-  const superMarket = await fetch(
-    `${baseUrl}/api/super-market-offers`
+  const offers = await fetch(
+    `${process.env.BASE_URL}/api/special-offers`
   ).then((res) => res.json());
 
-  const charger = await fetch(`${baseUrl}/api/charger`).then((res) =>
+  const superMarket = await fetch(
+    `${process.env.BASE_URL}/api/super-market-offers`
+  ).then((res) => res.json());
+
+  const charger = await fetch(
+    `${process.env.BASE_URL}/api/charger`
+  ).then((res) => res.json());
+
+  const single = await fetch(`${process.env.BASE_URL}/api/single`).then((res) =>
     res.json()
   );
 
-  const single = await fetch(`${baseUrl}/api/single`).then((res) => res.json());
-
-  const mobile = await fetch(`${baseUrl}/api/mobile`).then((res) => res.json());
+  const mobile = await fetch(`${process.env.BASE_URL}/api/mobile`).then((res) =>
+    res.json()
+  );
 
   return {
     props: { offers, superMarket, charger, single, mobile },

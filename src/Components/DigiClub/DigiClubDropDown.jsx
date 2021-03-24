@@ -4,7 +4,6 @@ import axios from "axios";
 
 //Helper
 import toFarsiNumber from "../../Helper/FarsiNumber";
-import { baseUrl } from "../../Helper/Config";
 
 //Font Awesome
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -23,7 +22,7 @@ const DigiClubDropDown = () => {
   useEffect(() => {
     let active = true;
 
-    axios.get(`${baseUrl}/api/counter`).then((res) => {
+    axios.get("/api/counter").then((res) => {
       active ? setRemainTime(res.data.remaining) : null;
     });
 

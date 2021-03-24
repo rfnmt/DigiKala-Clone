@@ -20,9 +20,6 @@ import DigiPlusDropDown from "./DigiPlus/DigiPlusDropDown";
 import DigiClubDropDown from "./DigiClub/DigiClubDropDown";
 import CategoryDropDown from "./CategoryDropDown/index";
 
-//Helper
-import { baseUrl } from "../Helper/Config";
-
 //Styles
 import Style from "../../styles/Header.module.css";
 
@@ -63,7 +60,7 @@ const Header = () => {
         {/* Main Section of Header */}
         <div className={Style.mainHeader}>
           <div className={Style.logoAndSerach}>
-            <Link href={baseUrl}>
+            <Link href="/">
               <a href="">
                 <div className={Style.logo}>
                   <img src="/Logotype-en.svg" alt="لوگوی دیجیکالا" />

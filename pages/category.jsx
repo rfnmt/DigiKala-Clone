@@ -6,9 +6,6 @@ import BackToTop from "../src/Components/BackToTop";
 import Footer from "../src/Components/Footer";
 import CategoryBody from "../src/Components/Category";
 
-// Helper
-import { baseUrl } from "../src/Helper/Config";
-
 export default function Category({ items }) {
   return (
     <>
@@ -18,12 +15,12 @@ export default function Category({ items }) {
       <Footer />
     </>
   );
-};
+}
 
 export async function getStaticProps() {
-  const items = await fetch(`${baseUrl}/api/game-category`).then((res) =>
-    res.json()
-  );
+  const items = await fetch(
+    `${process.env.BASE_URL}/api/game-category`
+  ).then((res) => res.json());
 
   return {
     props: { items },
